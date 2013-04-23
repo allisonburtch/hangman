@@ -12,7 +12,7 @@ def guess_word()
 	print prompt
 	guess_word = gets.chomp()
 		if $wordList[$n].to_s == guess_word.to_s
-					puts "you win!"
+			puts "you win!"
 		else
 			puts "you lose!"
 		end
@@ -33,7 +33,7 @@ def start()
 			puts $wordList[$n].to_s.gsub(/[a-z]/, " _")
 		end
 
-		puts "Pick a letter. Try number #{i+1}"
+		puts "Pick a letter. Attempt number #{i+1}"
 		print prompt
 		this_guess = gets.chomp()
 			#guesses.push.next_move
@@ -41,8 +41,6 @@ def start()
 
 		if $wordList[$n].include? next_move.last
 			# do nothing
-		# elsif $wordList[n] == next_move[]
-		# 	puts "you win!"
 		else
 			i += 1
 			puts man_drawing[i-1]
