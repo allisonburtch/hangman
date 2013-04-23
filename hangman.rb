@@ -23,7 +23,7 @@ def start()
 	puts "we're going to play a game of hangman"
 	puts "The word has #{wordList[n].length} letters"
 
-	man_drawing = ["\t\t 0", "\t\t\\", "\t\t\\ //","\t\t|","\t\t/","\t\t/ \\"]	
+	man_drawing = ["\n\t\t 0", "\n\t\t 0\n\t\t\\", "\n\t\t 0\n\t\t\\ /","\n\t\t 0\n\t\t\\ /\n\t\t |","\n\t\t 0\n\t\t\\ /\n\t\t |\n\t\t/","\n\t\t 0\n\t\t\\ /\n\t\t |\n\t\t/ \\"]	
 	next_move = []
 
 	while i < 6	
@@ -45,9 +45,8 @@ def start()
 		# 	puts "you win!"
 		else
 			i += 1
-			i.times do |x|
-			puts man_drawing[x]
-				end		
+			puts man_drawing[i]
+						
 		end
 	end
 
