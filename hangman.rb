@@ -7,7 +7,7 @@ def guess_word()
 	puts "Do you want to guess the word?"
 	print prompt
 	guess_word = gets.chomp()
-
+	#this isn't working
 	if wordList[n].to_s == guess_word.to_s
 				puts "you win!"
 	else
@@ -41,8 +41,8 @@ def start()
 
 		if wordList[n].include? next_move.last
 			# do nothing
-		elsif wordList[n].include? next_move.to_s.all
-			puts "you win!"
+		# elsif wordList[n] == next_move[]
+		# 	puts "you win!"
 		else
 			i += 1
 			i.times do |x|
