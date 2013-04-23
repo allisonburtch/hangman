@@ -1,8 +1,6 @@
 
 $wordList = ["abracadabra", "experimental", "lynx", "bicycle", "catamaran", "geography"]
 $n = rand($wordList.length)
-puts $wordList.length
-
 
 def prompt()
 	print "> "
@@ -10,7 +8,7 @@ end
 
 	
 def guess_word()
-	puts $wordList[$n].to_s
+	#puts $wordList[$n].to_s
 	puts "Do you want to guess the word?"
 	print prompt
 	guess_word = gets.chomp()
@@ -18,13 +16,11 @@ def guess_word()
 	if $wordList[$n].to_s == guess_word.to_s
 				puts "you win!"
 	else
-		puts man_drawing[6]
+		puts "you lose!"
 	end
 end
 
 def start()
-	# $wordList = ["abracadabra", "experimental", "lynx", "bicycle"]
-	# n = rand($wordList.length)
 	i = 0 # number of wrong guesses remaining
 	puts "we're going to play a game of hangman"
 	puts "The word has #{$wordList[$n].length} letters"
@@ -39,7 +35,7 @@ def start()
 			puts $wordList[$n].to_s.gsub(/[a-z]/, " _")
 		end
 
-		puts "Pick a letter"
+		puts "Pick a letter. Try number #{i+1}"
 		print prompt
 		this_guess = gets.chomp()
 			#guesses.push.next_move
@@ -51,7 +47,7 @@ def start()
 		# 	puts "you win!"
 		else
 			i += 1
-			puts man_drawing[i]
+			puts man_drawing[i-1]
 						
 		end
 	end
