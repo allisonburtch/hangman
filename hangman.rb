@@ -8,16 +8,14 @@ end
 
 	
 def guess_word()
-	#puts $wordList[$n].to_s
 	puts "Do you want to guess the word?"
 	print prompt
 	guess_word = gets.chomp()
-	#this isn't working
-	if $wordList[$n].to_s == guess_word.to_s
-				puts "you win!"
-	else
-		puts "you lose!"
-	end
+		if $wordList[$n].to_s == guess_word.to_s
+					puts "you win!"
+		else
+			puts "you lose!"
+		end
 end
 
 def start()
