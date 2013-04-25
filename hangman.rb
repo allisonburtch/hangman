@@ -1,3 +1,24 @@
+# Add the array of words at the end of this email to the program (taken from the NY Times home page).
+
+# input_file = ARGV[0]
+#   current_file = File.open(input_file)
+#   current_file = []
+#   $wordList = current_file
+#   $n = rand($wordList.length)
+
+
+# Change the code so that is chooses a random word that is x characters long (where x is chosen by the player).
+
+# if $wordList[$n].chars.length == x
+# Change the code so the player can specify the maximum number of vowels that appear in the randomly chosen word.
+# vowels = "a", "e", "i", "o", "u", if $wordList[$n].chars == vowels
+
+# Change the code so that the player can choose one or more characters that must appear in the randomly chosen word.
+#
+
+
+
+
 
 $wordList = ["abracadabra", "experimental", "lynx", "bicycle", "catamaran", "geography"]
 $n = rand($wordList.length)
@@ -36,7 +57,8 @@ def start()
 		puts "Pick a letter. Attempt number #{i+1}"
 		print prompt
 		this_guess = gets.chomp()
-			#guesses.push.next_move
+		
+
 		next_move << this_guess
 
 		if $wordList[$n].include? next_move.last
