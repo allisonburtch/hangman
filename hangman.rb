@@ -6,7 +6,6 @@
 #   $wordList = current_file
 #   $n = rand($wordList.length)
 
-
 # Change the code so that is chooses a random word that is x characters long (where x is chosen by the player).
 
 # if $wordList[$n].chars.length == x
@@ -15,9 +14,6 @@
 
 # Change the code so that the player can choose one or more characters that must appear in the randomly chosen word.
 #
-
-
-
 
 
 $wordList = ["abracadabra", "experimental", "lynx", "bicycle", "catamaran", "geography"]
